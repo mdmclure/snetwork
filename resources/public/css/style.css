@@ -1,0 +1,19 @@
+.container {display: table;
+           height: 100%;
+           width: 100%;}
+
+.example-pane {width: 'auto';
+               display: table-cell;
+              vertical-align: top;}
+
+.space-pane {max-width: 700px;
+             padding: 5px;
+             display: table-cell;}
+
+#space-canvas {display: table-row;
+              }
+
+.detail-pane {height: 'auto';
+             display: table-row;}
+
+.example-tile {padding: 10px;}

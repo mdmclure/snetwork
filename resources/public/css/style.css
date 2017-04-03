@@ -1,19 +1,28 @@
-.container {display: table;
-           height: 100%;
-           width: 100%;}
 
 .example-pane {width: 'auto';
                display: table-cell;
-              vertical-align: top;}
+               vertical-align: top;}
 
-.space-pane {max-width: 700px;
+.space-pane {max-width: 800px;
              padding: 5px;
-             display: table-cell;}
-
-#space-canvas {display: table-row;
-              }
+             display: table-cell;
+             vertical-align: top;}
 
 .detail-pane {height: 'auto';
              display: table-row;}
 
 .example-tile {padding: 10px;}
+
+.table-container {display: table;
+                  height: 100%;
+                  width: 100%;
+                  vertical-align: top;}
+
+.row-container {display: table-row;
+                width: 100%;
+                vertical-align: top;
+                white-space: nowrap;
+                overflow: hidden;}
+
+#space-canvas {display: inline-block;
+               vertical-align: top;}

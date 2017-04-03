@@ -45,7 +45,7 @@
                            {:primary-text-color (ui/color :light-black) 
                             :font-weight 200}}
                           )}
-             (dom/div #js {:className "container"}
+             (dom/div #js {:className "table-container"}
                       (grid/example-grid examples)
                       (space/space-view space)
                       )))))

@@ -116,10 +116,10 @@ clairvoyant.core.fn_re = /function\s+([a-zA-Z0-9_$]+)?\(([a-zA-Z0-9_,\s]+)\)/;
  *   
  */
 clairvoyant.core.fn_signature = (function clairvoyant$core$fn_signature(f){
-var vec__22806 = cljs.core.re_find.call(null,clairvoyant.core.fn_re,[cljs.core.str(f)].join(''));
-var _ = cljs.core.nth.call(null,vec__22806,(0),null);
-var name = cljs.core.nth.call(null,vec__22806,(1),null);
-var sig = cljs.core.nth.call(null,vec__22806,(2),null);
+var vec__32032 = cljs.core.re_find.call(null,clairvoyant.core.fn_re,[cljs.core.str(f)].join(''));
+var _ = cljs.core.nth.call(null,vec__32032,(0),null);
+var name = cljs.core.nth.call(null,vec__32032,(1),null);
+var sig = cljs.core.nth.call(null,vec__32032,(2),null);
 var arglist = cljs.core.mapv.call(null,cljs.core.symbol,[cljs.core.str(sig)].join('').split(","));
 if(cljs.core.truth_(name)){
 return cljs.core._conj.call(null,(function (){var x__22462__auto__ = cljs.core.symbol.call(null,name);
@@ -166,7 +166,7 @@ return console.groupEnd();
 ;
 var has_bindings_QMARK_ = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 21, [new cljs.core.Symbol("cljs.core","extend-protocol","cljs.core/extend-protocol",-100428625,null),null,new cljs.core.Symbol(null,"deftype","deftype",1980826088,null),null,new cljs.core.Symbol(null,"defmethod","defmethod",-579171823,null),null,new cljs.core.Symbol(null,"fn*","fn*",-752876845,null),null,new cljs.core.Symbol("cljs.core","let","cljs.core/let",-308701135,null),null,new cljs.core.Symbol(null,"defn","defn",-126010802,null),null,new cljs.core.Symbol(null,"extend-protocol","extend-protocol",306378578,null),null,new cljs.core.Symbol(null,"extend-type","extend-type",1123355921,null),null,new cljs.core.Symbol("cljs.core","defrecord","cljs.core/defrecord",948295858,null),null,new cljs.core.Symbol("cljs.core","fn","cljs.core/fn",-1065745098,null),null,new cljs.core.Symbol(null,"reify","reify",1885539699,null),null,new cljs.core.Symbol(null,"let","let",358118826,null),null,new cljs.core.Symbol(null,"fn","fn",465265323,null),null,new cljs.core.Symbol(null,"defrecord","defrecord",273038109,null),null,new cljs.core.Symbol(null,"defn-","defn-",1097765044,null),null,new cljs.core.Symbol("cljs.core","defmethod","cljs.core/defmethod",-180785162,null),null,new cljs.core.Symbol("cljs.core","defn","cljs.core/defn",-1606493717,null),null,new cljs.core.Symbol("cljs.core","deftype","cljs.core/deftype",-1630339979,null),null,new cljs.core.Symbol("cljs.core","extend-type","cljs.core/extend-type",2058791100,null),null,new cljs.core.Symbol("cljs.core","reify","cljs.core/reify",463577556,null),null,new cljs.core.Symbol("cljs.core","defn-","cljs.core/defn-",1764521227,null),null], null), null);
 var fn_like_QMARK_ = cljs.core.disj.call(null,has_bindings_QMARK_,new cljs.core.Symbol(null,"let","let",358118826,null),new cljs.core.Symbol("cljs.core","let","cljs.core/let",-308701135,null));
-if(typeof clairvoyant.core.t_clairvoyant$core22809 !== 'undefined'){
+if(typeof clairvoyant.core.t_clairvoyant$core32035 !== 'undefined'){
 } else {
 
 /**
@@ -177,50 +177,50 @@ if(typeof clairvoyant.core.t_clairvoyant$core22809 !== 'undefined'){
  * @implements {clairvoyant.core.ITraceExit}
  * @implements {cljs.core.IWithMeta}
 */
-clairvoyant.core.t_clairvoyant$core22809 = (function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_,meta22810){
+clairvoyant.core.t_clairvoyant$core32035 = (function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_,meta32036){
 this.pr_val_STAR_ = pr_val_STAR_;
 this.pr_val = pr_val;
 this.log_binding = log_binding;
 this.log_exit = log_exit;
 this.has_bindings_QMARK_ = has_bindings_QMARK_;
 this.fn_like_QMARK_ = fn_like_QMARK_;
-this.meta22810 = meta22810;
+this.meta32036 = meta32036;
 this.cljs$lang$protocol_mask$partition0$ = 393216;
 this.cljs$lang$protocol_mask$partition1$ = 0;
 })
-clairvoyant.core.t_clairvoyant$core22809.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
-return (function (_22811,meta22810__$1){
+clairvoyant.core.t_clairvoyant$core32035.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
+return (function (_32037,meta32036__$1){
 var self__ = this;
-var _22811__$1 = this;
-return (new clairvoyant.core.t_clairvoyant$core22809(self__.pr_val_STAR_,self__.pr_val,self__.log_binding,self__.log_exit,self__.has_bindings_QMARK_,self__.fn_like_QMARK_,meta22810__$1));
+var _32037__$1 = this;
+return (new clairvoyant.core.t_clairvoyant$core32035(self__.pr_val_STAR_,self__.pr_val,self__.log_binding,self__.log_exit,self__.has_bindings_QMARK_,self__.fn_like_QMARK_,meta32036__$1));
 });})(pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_))
 ;
 
-clairvoyant.core.t_clairvoyant$core22809.prototype.cljs$core$IMeta$_meta$arity$1 = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
-return (function (_22811){
+clairvoyant.core.t_clairvoyant$core32035.prototype.cljs$core$IMeta$_meta$arity$1 = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
+return (function (_32037){
 var self__ = this;
-var _22811__$1 = this;
-return self__.meta22810;
+var _32037__$1 = this;
+return self__.meta32036;
 });})(pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_))
 ;
 
-clairvoyant.core.t_clairvoyant$core22809.prototype.clairvoyant$core$ITraceEnter$ = cljs.core.PROTOCOL_SENTINEL;
+clairvoyant.core.t_clairvoyant$core32035.prototype.clairvoyant$core$ITraceEnter$ = cljs.core.PROTOCOL_SENTINEL;
 
-clairvoyant.core.t_clairvoyant$core22809.prototype.clairvoyant$core$ITraceEnter$_trace_enter$arity$2 = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
-return (function (_,p__22812){
+clairvoyant.core.t_clairvoyant$core32035.prototype.clairvoyant$core$ITraceEnter$_trace_enter$arity$2 = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
+return (function (_,p__32038){
 var self__ = this;
-var map__22813 = p__22812;
-var map__22813__$1 = ((((!((map__22813 == null)))?((((map__22813.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__22813.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__22813):map__22813);
-var form = cljs.core.get.call(null,map__22813__$1,new cljs.core.Keyword(null,"form","form",-1624062471));
-var args = cljs.core.get.call(null,map__22813__$1,new cljs.core.Keyword(null,"args","args",1315556576));
-var dispatch_val = cljs.core.get.call(null,map__22813__$1,new cljs.core.Keyword(null,"dispatch-val","dispatch-val",-1571470527));
-var protocol = cljs.core.get.call(null,map__22813__$1,new cljs.core.Keyword(null,"protocol","protocol",652470118));
-var init = cljs.core.get.call(null,map__22813__$1,new cljs.core.Keyword(null,"init","init",-1875481434));
-var ns = cljs.core.get.call(null,map__22813__$1,new cljs.core.Keyword(null,"ns","ns",441598760));
-var name = cljs.core.get.call(null,map__22813__$1,new cljs.core.Keyword(null,"name","name",1843675177));
-var arglist = cljs.core.get.call(null,map__22813__$1,new cljs.core.Keyword(null,"arglist","arglist",-1808272150));
-var op = cljs.core.get.call(null,map__22813__$1,new cljs.core.Keyword(null,"op","op",-1882987955));
-var anonymous_QMARK_ = cljs.core.get.call(null,map__22813__$1,new cljs.core.Keyword(null,"anonymous?","anonymous?",374098995));
+var map__32039 = p__32038;
+var map__32039__$1 = ((((!((map__32039 == null)))?((((map__32039.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__32039.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__32039):map__32039);
+var form = cljs.core.get.call(null,map__32039__$1,new cljs.core.Keyword(null,"form","form",-1624062471));
+var args = cljs.core.get.call(null,map__32039__$1,new cljs.core.Keyword(null,"args","args",1315556576));
+var dispatch_val = cljs.core.get.call(null,map__32039__$1,new cljs.core.Keyword(null,"dispatch-val","dispatch-val",-1571470527));
+var protocol = cljs.core.get.call(null,map__32039__$1,new cljs.core.Keyword(null,"protocol","protocol",652470118));
+var init = cljs.core.get.call(null,map__32039__$1,new cljs.core.Keyword(null,"init","init",-1875481434));
+var ns = cljs.core.get.call(null,map__32039__$1,new cljs.core.Keyword(null,"ns","ns",441598760));
+var name = cljs.core.get.call(null,map__32039__$1,new cljs.core.Keyword(null,"name","name",1843675177));
+var arglist = cljs.core.get.call(null,map__32039__$1,new cljs.core.Keyword(null,"arglist","arglist",-1808272150));
+var op = cljs.core.get.call(null,map__32039__$1,new cljs.core.Keyword(null,"op","op",-1882987955));
+var anonymous_QMARK_ = cljs.core.get.call(null,map__32039__$1,new cljs.core.Keyword(null,"anonymous?","anonymous?",374098995));
 var ___$1 = this;
 if(cljs.core.truth_(self__.fn_like_QMARK_.call(null,op))){
 var title = (cljs.core.truth_(protocol)?[cljs.core.str(protocol),cljs.core.str(" "),cljs.core.str(name),cljs.core.str(" "),cljs.core.str(arglist)].join(''):[cljs.core.str(ns),cljs.core.str("/"),cljs.core.str(name),cljs.core.str((cljs.core.truth_(dispatch_val)?[cljs.core.str(" "),cljs.core.str(cljs.core.pr_str.call(null,dispatch_val))].join(''):null)),cljs.core.str([cljs.core.str(" "),cljs.core.str(arglist)].join('')),cljs.core.str((cljs.core.truth_(anonymous_QMARK_)?" (anonymous)":null))].join(''));
@@ -245,15 +245,15 @@ return null;
 });})(pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_))
 ;
 
-clairvoyant.core.t_clairvoyant$core22809.prototype.clairvoyant$core$ITraceExit$ = cljs.core.PROTOCOL_SENTINEL;
+clairvoyant.core.t_clairvoyant$core32035.prototype.clairvoyant$core$ITraceExit$ = cljs.core.PROTOCOL_SENTINEL;
 
-clairvoyant.core.t_clairvoyant$core22809.prototype.clairvoyant$core$ITraceExit$_trace_exit$arity$2 = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
-return (function (_,p__22815){
+clairvoyant.core.t_clairvoyant$core32035.prototype.clairvoyant$core$ITraceExit$_trace_exit$arity$2 = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
+return (function (_,p__32041){
 var self__ = this;
-var map__22816 = p__22815;
-var map__22816__$1 = ((((!((map__22816 == null)))?((((map__22816.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__22816.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__22816):map__22816);
-var op = cljs.core.get.call(null,map__22816__$1,new cljs.core.Keyword(null,"op","op",-1882987955));
-var exit = cljs.core.get.call(null,map__22816__$1,new cljs.core.Keyword(null,"exit","exit",351849638));
+var map__32042 = p__32041;
+var map__32042__$1 = ((((!((map__32042 == null)))?((((map__32042.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__32042.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__32042):map__32042);
+var op = cljs.core.get.call(null,map__32042__$1,new cljs.core.Keyword(null,"op","op",-1882987955));
+var exit = cljs.core.get.call(null,map__32042__$1,new cljs.core.Keyword(null,"exit","exit",351849638));
 var ___$1 = this;
 if(cljs.core.truth_(new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Symbol(null,"binding","binding",-2114503176,null),null], null), null).call(null,op))){
 self__.log_exit.call(null,exit);
@@ -273,17 +273,17 @@ return null;
 });})(pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_))
 ;
 
-clairvoyant.core.t_clairvoyant$core22809.prototype.clairvoyant$core$ITraceError$ = cljs.core.PROTOCOL_SENTINEL;
+clairvoyant.core.t_clairvoyant$core32035.prototype.clairvoyant$core$ITraceError$ = cljs.core.PROTOCOL_SENTINEL;
 
-clairvoyant.core.t_clairvoyant$core22809.prototype.clairvoyant$core$ITraceError$_trace_error$arity$2 = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
-return (function (_,p__22818){
+clairvoyant.core.t_clairvoyant$core32035.prototype.clairvoyant$core$ITraceError$_trace_error$arity$2 = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
+return (function (_,p__32044){
 var self__ = this;
-var map__22819 = p__22818;
-var map__22819__$1 = ((((!((map__22819 == null)))?((((map__22819.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__22819.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__22819):map__22819);
-var op = cljs.core.get.call(null,map__22819__$1,new cljs.core.Keyword(null,"op","op",-1882987955));
-var form = cljs.core.get.call(null,map__22819__$1,new cljs.core.Keyword(null,"form","form",-1624062471));
-var error = cljs.core.get.call(null,map__22819__$1,new cljs.core.Keyword(null,"error","error",-978969032));
-var ex_data = cljs.core.get.call(null,map__22819__$1,new cljs.core.Keyword(null,"ex-data","ex-data",-309040259));
+var map__32045 = p__32044;
+var map__32045__$1 = ((((!((map__32045 == null)))?((((map__32045.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__32045.cljs$core$ISeq$)))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__32045):map__32045);
+var op = cljs.core.get.call(null,map__32045__$1,new cljs.core.Keyword(null,"op","op",-1882987955));
+var form = cljs.core.get.call(null,map__32045__$1,new cljs.core.Keyword(null,"form","form",-1624062471));
+var error = cljs.core.get.call(null,map__32045__$1,new cljs.core.Keyword(null,"error","error",-978969032));
+var ex_data = cljs.core.get.call(null,map__32045__$1,new cljs.core.Keyword(null,"ex-data","ex-data",-309040259));
 var ___$1 = this;
 if(cljs.core.truth_(new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Symbol(null,"binding","binding",-2114503176,null),null], null), null).call(null,op))){
 console.error(error.stack);
@@ -328,31 +328,31 @@ return null;
 });})(pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_))
 ;
 
-clairvoyant.core.t_clairvoyant$core22809.getBasis = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
+clairvoyant.core.t_clairvoyant$core32035.getBasis = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
 return (function (){
-return new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"pr-val*","pr-val*",344533536,null),new cljs.core.Symbol(null,"pr-val","pr-val",-289132329,null),new cljs.core.Symbol(null,"log-binding","log-binding",-7452044,null),new cljs.core.Symbol(null,"log-exit","log-exit",-1916806496,null),new cljs.core.Symbol(null,"has-bindings?","has-bindings?",-1143394454,null),new cljs.core.Symbol(null,"fn-like?","fn-like?",312793189,null),new cljs.core.Symbol(null,"meta22810","meta22810",407197117,null)], null);
+return new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"pr-val*","pr-val*",344533536,null),new cljs.core.Symbol(null,"pr-val","pr-val",-289132329,null),new cljs.core.Symbol(null,"log-binding","log-binding",-7452044,null),new cljs.core.Symbol(null,"log-exit","log-exit",-1916806496,null),new cljs.core.Symbol(null,"has-bindings?","has-bindings?",-1143394454,null),new cljs.core.Symbol(null,"fn-like?","fn-like?",312793189,null),new cljs.core.Symbol(null,"meta32036","meta32036",1530132952,null)], null);
 });})(pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_))
 ;
 
-clairvoyant.core.t_clairvoyant$core22809.cljs$lang$type = true;
+clairvoyant.core.t_clairvoyant$core32035.cljs$lang$type = true;
 
-clairvoyant.core.t_clairvoyant$core22809.cljs$lang$ctorStr = "clairvoyant.core/t_clairvoyant$core22809";
+clairvoyant.core.t_clairvoyant$core32035.cljs$lang$ctorStr = "clairvoyant.core/t_clairvoyant$core32035";
 
-clairvoyant.core.t_clairvoyant$core22809.cljs$lang$ctorPrWriter = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
+clairvoyant.core.t_clairvoyant$core32035.cljs$lang$ctorPrWriter = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
 return (function (this__22231__auto__,writer__22232__auto__,opt__22233__auto__){
-return cljs.core._write.call(null,writer__22232__auto__,"clairvoyant.core/t_clairvoyant$core22809");
+return cljs.core._write.call(null,writer__22232__auto__,"clairvoyant.core/t_clairvoyant$core32035");
 });})(pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_))
 ;
 
-clairvoyant.core.__GT_t_clairvoyant$core22809 = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
-return (function clairvoyant$core$__GT_t_clairvoyant$core22809(pr_val_STAR___$1,pr_val__$1,log_binding__$1,log_exit__$1,has_bindings_QMARK___$1,fn_like_QMARK___$1,meta22810){
-return (new clairvoyant.core.t_clairvoyant$core22809(pr_val_STAR___$1,pr_val__$1,log_binding__$1,log_exit__$1,has_bindings_QMARK___$1,fn_like_QMARK___$1,meta22810));
+clairvoyant.core.__GT_t_clairvoyant$core32035 = ((function (pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_){
+return (function clairvoyant$core$__GT_t_clairvoyant$core32035(pr_val_STAR___$1,pr_val__$1,log_binding__$1,log_exit__$1,has_bindings_QMARK___$1,fn_like_QMARK___$1,meta32036){
+return (new clairvoyant.core.t_clairvoyant$core32035(pr_val_STAR___$1,pr_val__$1,log_binding__$1,log_exit__$1,has_bindings_QMARK___$1,fn_like_QMARK___$1,meta32036));
 });})(pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_))
 ;
 
 }
 
-return (new clairvoyant.core.t_clairvoyant$core22809(pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_,cljs.core.PersistentArrayMap.EMPTY));
+return (new clairvoyant.core.t_clairvoyant$core32035(pr_val_STAR_,pr_val,log_binding,log_exit,has_bindings_QMARK_,fn_like_QMARK_,cljs.core.PersistentArrayMap.EMPTY));
 })();
 
-//# sourceMappingURL=core.js.map?rel=1490288894562
+//# sourceMappingURL=core.js.map?rel=1490992944752

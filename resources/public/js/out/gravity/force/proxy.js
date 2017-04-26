@@ -9,23 +9,23 @@ goog.require('gravity.tools');
  *   arg data : an object to send (optionnal)
  */
 gravity.force.proxy.send = (function gravity$force$proxy$send(var_args){
-var args35267 = [];
-var len__22733__auto___35270 = arguments.length;
-var i__22734__auto___35271 = (0);
+var args36159 = [];
+var len__22733__auto___36162 = arguments.length;
+var i__22734__auto___36163 = (0);
 while(true){
-if((i__22734__auto___35271 < len__22733__auto___35270)){
-args35267.push((arguments[i__22734__auto___35271]));
+if((i__22734__auto___36163 < len__22733__auto___36162)){
+args36159.push((arguments[i__22734__auto___36163]));
 
-var G__35272 = (i__22734__auto___35271 + (1));
-i__22734__auto___35271 = G__35272;
+var G__36164 = (i__22734__auto___36163 + (1));
+i__22734__auto___36163 = G__36164;
 continue;
 } else {
 }
 break;
 }
 
-var G__35269 = args35267.length;
-switch (G__35269) {
+var G__36161 = args36159.length;
+switch (G__36161) {
 case 2:
 return gravity.force.proxy.send.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -35,7 +35,7 @@ return gravity.force.proxy.send.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args35267.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args36159.length)].join('')));
 
 }
 });
@@ -86,4 +86,4 @@ gravity.force.proxy.serialize = (function gravity$force$proxy$serialize(value){
 return [cljs.core.str("("),cljs.core.str(value.toString()),cljs.core.str(")")].join('');
 });
 
-//# sourceMappingURL=proxy.js.map?rel=1490419733669
+//# sourceMappingURL=proxy.js.map?rel=1491790264961

@@ -57,7 +57,7 @@
   (let [geometry (get-unique-geometry)
         material (get-unique-material (get-unique-color (.-group node) classifier))
         sphere (new js/THREE.Mesh geometry material)]
-    (.set (.-scale sphere) 1.0 1.0 1.0)
+    (.set (.-scale sphere) 0.3 0.3 0.3)
     sphere))
 
 
@@ -80,24 +80,3 @@
     node))
 
 
-(defn generate-coord-mesh
-  "create and return a new node mesh used for collisions"
-  [coord]
-  (let [geometry (get-unique-cube-geometry)
-        material (get-unique-material (str 'black))
-        sphere (new js/THREE.Mesh geometry material)]
-    (.set (.-scale sphere) 0.1 0.1 0.1)
-    (.set (.-position sphere)
-          (nth coord 0) (nth coord 1) (nth coord 2))
-    sphere))
-
-(defn create-field-pt
-  [coord]
-  (let [field-mesh (generate-coord-mesh coord)
-        field-pt (clj->js {})]
-    (set! (.-coordinate field-pt) (clj->js coord))
-    (set! (.-mesh field-pt) field-mesh)
-    (set! (.-castShadow field-mesh) false)
-    (set! (.-fieldpt field-mesh) field-pt)
-;    (log field-pt)
-    field-pt))

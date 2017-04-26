@@ -13,8 +13,7 @@
 (defn log
   "Log in the console"
   [& args]
-  (.log js/console (get-args args))
-	)
+  (apply .log (clj->js (conj js/console args))))
 
 (defn warn
   "Warn in the console"
@@ -26,9 +25,10 @@
 	[& args]
 	(.error js/console (get-args args)))
 
-(defn map-map [f m]
+(defn map-map
   "Maps a binary function over the key value pairs which
   takes the key and value as input and outputs a new value"
+  [f m]
   (reduce (fn [altered-map [k v]]
             (assoc altered-map k (f k v))) {} m))
 
@@ -42,6 +42,6 @@
     {:only1 (clj->js (filterv #(not (contains? keys2 (aget % idfn))) v1))
      :only2 (clj->js (filterv #(not (contains? keys1 (aget % idfn))) v2))}))
 
-(trace/trace-forms
- (defn trace-var [v]
-   v))
+ (trace/trace-forms
+  (defn trace-var [v]
+    v))

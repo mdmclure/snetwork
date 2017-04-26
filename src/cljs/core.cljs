@@ -19,7 +19,6 @@
 
 
 (defui AppRoot 
-
   static om/IQuery
   (query [this]
          `[{:examples ~(om/get-query grid/ExampleGrid)}
